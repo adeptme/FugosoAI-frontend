@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot.css">
+    <title>Fugoso AI Chat</title>
+</head>
+<body>
+    <div id="chat-container">
+        <section id="chat-header">
+            <div id="chat-avatar-container">
+                <img id="chat-avatar" src="assets/image.png" alt="Chat Avatar">
+                <div class="online-dot"></div>
+            </div>
+            <div>
+                <h1 id="chat-name">Fugoso AI</h1>
+            </div>
+        </section>
+        
+        <section id="chat-body">
+            <div id="chat-message">
+
+            </div>
+        </section>
+        
+        <form id="message-form">
+            <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
+    
+    <script src="chatbot.js"></script>
+</body>
+</html>
