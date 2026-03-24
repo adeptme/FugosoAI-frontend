@@ -1,4 +1,5 @@
-const BACKEND_URL="https://fugoso-ai-backend.vercel.app";
+const BACKEND_URL="fugoso-ai-backend.vercel.app";
+const WELCOME_MESSAGE = "Hello! I am Fugoso AI. How can I help you today?";
 
 function appendMessage(sender, text) {
     const chatMessageContainer = document.getElementById("chat-message");
@@ -76,3 +77,4 @@ async function sendMessage(event) {
 }
 
 document.getElementById("message-form").addEventListener("submit", sendMessage);
+appendMessage("bot", WELCOME_MESSAGE); 
